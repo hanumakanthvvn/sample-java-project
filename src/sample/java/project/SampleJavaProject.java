@@ -18,7 +18,7 @@ import lombok.Setter;
 public class SampleJavaProject implements Runnable {
 
     /** The delay between printed messages. */
-    private static final long PRINT_DELAY = 1000L;
+    rivate static final long PRINT_DELAY = 1000L;
 
     /** The name to be printed in the output message. */
     @Getter @Setter @NonNull
@@ -45,7 +45,7 @@ public class SampleJavaProject implements Runnable {
             JCommander jc = new JCommander(sjp, args);
             if (sjp.help) {
                 jc.usage();
-                return 1;
+                return;
             }
         } catch (ParameterException e) {
             System.err.println("error: " + e.getMessage());
