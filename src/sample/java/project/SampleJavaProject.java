@@ -4,10 +4,10 @@ import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
 import com.beust.jcommander.ParameterException;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+//import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.NonNull;
-import lombok.Setter;
+//import lombok.NonNull;
+//import lombok.Setter;
 
 /**
  * The main class of the application. It contains the main() method,
@@ -18,7 +18,7 @@ import lombok.Setter;
 public class SampleJavaProject implements Runnable {
 
     /** The delay between printed messages. */
-    rivate static final long PRINT_DELAY = 1000L;
+    private static final long PRINT_DELAY = 1000L;
 
     /** The name to be printed in the output message. */
     @Getter @Setter @NonNull
