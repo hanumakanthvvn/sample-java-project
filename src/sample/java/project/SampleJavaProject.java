@@ -45,7 +45,7 @@ public class SampleJavaProject implements Runnable {
             JCommander jc = new JCommander(sjp, args);
             if (sjp.help) {
                 jc.usage();
-                return;
+                return 1;
             }
         } catch (ParameterException e) {
             System.err.println("error: " + e.getMessage());
